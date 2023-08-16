@@ -1,6 +1,7 @@
 .columns > div {
   display: flex;
   flex-direction: column;
+  padding-bottom: 40px;
 }
 
 .columns img {
@@ -8,7 +9,15 @@
 }
 
 .columns > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-self: flex-start;
   order: 1;
+}
+
+.columns > div > div > p:first-child {
+  font-weight: 700;
 }
 
 .columns > div > .columns-img-col {
