@@ -11,7 +11,9 @@ export default function decorate(block) {
         child.closest('div').classList.add('cards-child');
         child.closest('div').addEventListener('click', () => {
           child.querySelector('ul').classList.toggle('cards-show');
-          child.querySelector('p').classList.toggle('cards-hidden');
+          child.querySelectorAll('p').forEach(p => {
+            p.classList.toggle('cards-hidden');
+          });
         })
       }) 
   })

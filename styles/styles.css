@@ -232,6 +232,8 @@ main .section {
   flex-direction: column;
   gap: 50px;
   padding: 64px 16px;
+  max-width: 1400px;
+  margin: auto;
 }
 
 @media (min-width: 600px) {
@@ -250,4 +252,8 @@ main .section {
 /* section metadata */
 main .section.highlight {
   background-color: var(--highlight-background-color);
+}
+
+.default-content-wrapper {
+  width: 100%;
 }
