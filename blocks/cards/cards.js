@@ -5,6 +5,8 @@ export default function decorate(block) {
         row.closest('div').classList.add('cards-multi-pic-container');
       } else {
         row.closest('div').classList.add('cards-single-pic-container');
+        const logo = row.getElementsByTagName('picture')[1];
+        logo.classList.add('cards-logo');
       }
 
       [...row.children].forEach((child) => {
